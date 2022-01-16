@@ -12,8 +12,8 @@ function App() {
           <h4>Quiz app created by Kaybangz</h4>
         </header>
         <Routes>
-          <Route path="/" exact element={<QuizNote />} />
-          <Route path="/quizApp" exact element={<QuizApp />} />
+          <Route path="https://kaybangz.github.io/my_react_quiz/" exact element={<QuizNote />} />
+          <Route path="https://kaybangz.github.io/my_react_quiz/quiz" exact element={<QuizApp />} />
         </Routes>
       </div>
     </Router>
