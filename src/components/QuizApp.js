@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./QuizStyle.css";
-import { Link } from "react-router-dom";
 import { questions } from "./QuizQuestions";
 import failure from "./images/failure.gif";
 import success from "./images/success.gif";
@@ -33,20 +32,8 @@ const QuizApp = () => {
         {quizEnd ? (
           <div>
             <div className="quiz_end_box">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "10px",
-                }}
-              >
                 <h5>Quiz completed!</h5>
-                <Link to="/">
-                  <button className="body_btn">Go back</button>
-                </Link>
-              </div>
-              <h3 style={{ marginTop: "-25px", marginBottom: ".1em" }}>
+              <h3 style={{ marginBottom: ".1em" }}>
                 You scored {score} out of 100
               </h3>
               <div>
